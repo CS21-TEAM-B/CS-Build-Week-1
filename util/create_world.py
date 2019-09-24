@@ -71,7 +71,7 @@ r_lowercavern.save()
 r_cavernstairs.save()
 
 
-# Link rooms together
+# Link rooms together in cavern/cave
 r_outside.connectRooms(r_foyer, "n")
 r_foyer.connectRooms(r_outside, "s")
 
@@ -102,7 +102,7 @@ r_stunnel3.connectRooms(r_stunnel2, "n")
 r_etunnel.connectRooms(r_etunnel2, "e")
 r_etunnel2.connectRooms(r_etunnel, "w")
 
-#
+
 r_etunnel2.connectRooms(r_stunnel4, "s")
 r_stunnel4.connectRooms(r_etunnel2, "n")
 
@@ -147,6 +147,76 @@ r_chamberroom.connectRooms(r_nchamberhall, "w")
 
 r_schamberhall.connectRooms(r_chamberroom2, "s")
 r_chamberroom2.connectRooms(r_schamberhall, "n")
+
+#linking rooms in the garden and garden path
+r_outside.connectRooms(r_gardenpath, "s")
+r_gardenpath.connectRooms(r_overlook, "n")
+
+r_gardenpath.connectRooms(r_garden, "w")
+r_garden.connectRooms(r_gardenpath, "e")
+
+r_garden.connectRooms(r_pumpkinpatch, "n")
+r_pumpkinpatch.connectRooms(r_garden, "s")
+
+r_garden.connectRooms(r_tomatopatch, "s")
+r_tomatopatch.connectRooms(r_garden, "n")
+
+r_garden.connectRooms(r_cornfield, "w")
+r_cornfield.connectRooms(r_garden, "e")
+
+r_cornfield.connectRooms(r_cornpath, "n")
+r_cornpath.connectRooms(r_cornfield, "s")
+
+#linking rooms in the crop field (cornpath)
+r_cornpath.connectRooms(r_cropcircle, "n")
+r_cropcircle.connectRooms(r_cornpath, "s")
+
+r_cropcircle.connectRooms(r_cropsquare, "e")
+r_cropsquare.connectRooms(r_cropcircle, "w")
+
+r_cropcircle.connectRooms(r_croptriangle, "w")
+r_croptriangle.connectRooms(r_cropcircle, "e")
+
+r_cropcircle.connectRooms(r_spaceship, "n")
+##cant go back^^ must find escape pod
+
+
+### Linking rooms in spaceship
+r_spaceship.connectRooms(r_spacewestcorridor, "w")
+r_spacewestcorridor.connectRooms(r_spaceship, "e")
+
+r_spaceship.connectRooms(r_spacenorthcorridor, "n")
+r_spacenorthcorridor.connectRooms(r_spaceship, "s")
+
+r_spacenorthcorridor.connectRooms(r_cockpit, "n")
+r_cockpit.connectRooms(r_spacenorthcorridor, "s")
+
+
+
+r_spaceship.connectRooms(r_spaceeastcorridor, "e")
+r_spaceeastcorridor.connectRooms(r_spaceship, "w")
+
+r_spaceship.connectRooms(r_controlroom, "n")
+r_controlroom.connectRooms(r_spaceeastcorridor, "s")
+
+r_spaceeastcorridor.connectRooms(r_spacedining, "s")
+r_spacedining.connectRooms(r_spaceeastcorridor, "n")
+
+
+r_controlroom.connectRooms(r_spacelibrary, "n")
+r_spacelibrary.connectRooms(r_controlroom, "s")
+
+
+r_controlroom.connectRooms(r_escapepod, "e")
+r_escapepod.connectRooms(r_controlroom, "w")
+
+
+r_controlroom.connectRooms(r_capatainchamber, "w")
+r_capatainchamber.connectRooms(r_controlroom, "e")
+
+r_escapepod.connectRooms(r_outside, "s")
+
+
 
 
 
