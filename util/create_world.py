@@ -35,11 +35,19 @@ r_stunnel3= Room(title="South Tunnel 3", description="""You've gone as far as yo
 
 r_etunnel2= Room(title="East Tunnel 2", description="""You've continues east. There is another tunnel going south again, or it continues east""")
 
-r_stunnel4= Room(title="SouthTunnel 4", description="""You've gone south. The tunnel continues in the same direction""")
+r_stunnel4= Room(title="South Tunnel 4", description="""You've gone south. The tunnel continues in the same direction""")
 
-r_stunnel5= Room(title="SouthTunnel 5", description="""You have reached deeper in the tunnel. You think you hear something ahead. You can continue south to investigate, or go back""")
+r_stunnel5= Room(title="South Tunnel 5", description="""You have reached deeper in the tunnel. You think you hear something ahead. You can continue south to investigate, or go back""")
 
-r_stunnel6= Room(title="SouthTunnel 6", description="""It was just the rocks settling in the cave. Another dead end. You better go back""")
+r_stunnel6= Room(title="South Tunnel 6", description="""It was just the rocks settling in the cave. Another dead end. You better go back""")
+
+r_etunnel= Room(title="East Tunnel 3", description="""You have gone as far as you can go in the east tunnel. You notice
+a tunnel goes north. You can go this way or go back """)
+
+r_ntunnel= Room(title="North Tunnel", description="""You notice a passage to your west.""")
+
+r_wpassage= Room(title="West Passage", description="""You notice a stairwell to the south, and a chamber entrance 
+continuing west.""")
 
 r_outside.save()
 r_foyer.save()
@@ -48,6 +56,20 @@ r_narrow.save()
 r_treasure.save()
 r_etunnel.save()
 r_etunnel2.save()
+r_etunnel3.save()
+r_stunnel.save()
+r_stunnel2.save()
+r_stunnel3.save()
+r_stunnel4.save()
+r_stunnel5.save()
+r_stunnel6.save()
+r_ntunnel.save()
+r_wpassage.save()
+
+#add these above
+r_lowercavern.save()
+r_cavernstairs.save()
+
 
 # Link rooms together
 r_outside.connectRooms(r_foyer, "n")
@@ -79,6 +101,52 @@ r_stunnel3.connectRooms(r_stunnel2, "n")
 
 r_etunnel.connectRooms(r_etunnel2, "e")
 r_etunnel2.connectRooms(r_etunnel, "w")
+
+#
+r_etunnel2.connectRooms(r_stunnel4, "s")
+r_stunnel4.connectRooms(r_etunnel2, "n")
+
+r_stunnel4.connectRooms(r_stunnel5, "s")
+r_stunnel5.connectRooms(r_stunnel4, "n")
+
+r_stunnel5.connectRooms(r_stunnel6, "s")
+r_stunnel6.connectRooms(r_stunnel5, "n")
+
+r_etunnel2.connectRooms(r_etunnel3, "e")
+r_etunnel3.connectRooms(r_etunnel2, "w")
+
+r_etunnel3.connectRooms(r_ntunnel, "n")
+r_ntunnel.connectRooms(r_etunnel3, "s")
+
+r_ntunnel.connectRooms(r_wpassage, "w")
+r_wpassage.connectRooms(r_npassage, "e")
+
+r_wpassage.connectRooms(r_cavernstairs, "s")
+r_cavernstairs.connectRooms(r_wpassage, "n")
+
+r_cavernstairs.connectRooms(r_lowercavern, "s")
+r_lowercavern.connectRooms(r_cavernstairs, "n")
+
+r_wpassage.connectRooms(r_cavernchamber, "w")
+r_cavernchamber.connectRooms(r_wpassage, "e")
+
+r_cavernchamber.connectRooms(r_nchamberhall, "n")
+r_nchamberhall.connectRooms(r_cavernchamber, "s")
+
+r_cavernchamber.connectRooms(r_wchamberhall, "w")
+r_wchamberhall.connectRooms(r_cavernchamber, "e")
+
+r_cavernchamber.connectRooms(r_schamberhall, "s")
+r_schamberhall.connectRooms(r_cavernchamber, "n")
+
+r_wchamberhall.connectRooms(r_secretchamber, "s")
+r_secretchamber.connectRooms(r_wchamberhall, "n")
+
+r_nchamberhall.connectRooms(r_chamberroom, "e")
+r_chamberroom.connectRooms(r_nchamberhall, "w")
+
+r_schamberhall.connectRooms(r_chamberroom2, "s")
+r_chamberroom2.connectRooms(r_schamberhall, "n")
 
 
 
