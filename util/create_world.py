@@ -291,6 +291,7 @@ r_upstairscottagebath.connectRooms(r_upstairscottagehall, "w")
 
 
 #linking main path east towards private road and mansion
+#mansion main floor
 r_mainpath.connectRooms(r_mansionentrance, "e")
 r_mansionentrance.connectRooms(r_mainpath, "w")
 
@@ -301,16 +302,14 @@ r_mansionhall.connectRooms(r_livingroom, "n")
 r_livingroom.connectRooms(r_mansionhall, "s")
 
 
-r_mansionhall.connectRooms(r_mansionupstairs, "e")
-r_mansionupstairs.connectRooms(r_mansionhall, "w")
-
-
 r_mansionhall.connectRooms(r_mansiondining, "s")
 r_mansiondining.connectRooms(r_mansionhall, "n")
 
 r_mansiondining.connectRooms(r_mansionkitchen, "e")
 r_mansionkitchen.connectRooms(r_mansiondining, "w")
 
+
+#downstairs mansion
 r_mansiondining.connectRooms(r_downstairsmansion, "s")
 r_downstairsmansion.connectRooms(r_mansiondining, "n")
 
@@ -329,6 +328,7 @@ r_bowlingalley.connectRooms(r_downstairshall, "w")
 r_downstairshall.connectRooms(r_movietheater, "w")
 r_movietheater.connectRooms(r_downstairshall, "e")
 
+##mansion main floor
 r_livingroom.connectRooms(r_mansionbath, "w")
 r_mansionbath.connectRooms(r_livingroom, "e")
 
@@ -361,6 +361,62 @@ r_mansionlibrary.connectRooms(r_northeasthall3, "e")
 
 r_northeasthall3.connectRooms(r_securityroom, "e")
 r_securityroom.connectRooms(r_northeasthall3, "w")
+
+##mansion upstairs
+r_mansionhall.connectRooms(r_mansionupstairs, "e")
+r_mansionupstairs.connectRooms(r_mansionhall, "w")
+
+
+r_mansionupstairs.connectRooms(r_upstairshall, "n")
+r_upstairshall.connectRooms(r_mansionupstairs, "s")
+
+r_upstairshall.connectRooms(r_upstairsguestbed, "w")
+r_upstairsguestbed.connectRooms(r_upstairshall, "e")
+
+r_upstairshall.connectRooms(r_upstairsguestbed2, "e")
+r_upstairsguestbed2.connectRooms(r_upstairshall, "w")
+
+r_upstairsguestbed2.connectRooms(r_upstairsguestbath2, "n")
+r_upstairsguestbath2.connectRooms(r_upstairsguestbed2, "s")
+
+r_upstairsguestbed2.connectRooms(r_upstairsguestcloset2, "s")
+r_upstairsguestcloset2.connectRooms(r_upstairsguestbed2, "n")
+
+r_upstairshall.connectRooms(r_upstairshall2, "n")
+r_upstairshall2.connectRooms(r_upstairshall, "s")
+
+r_upstairshall2.connectRooms(r_sauna, "w")
+r_sauna.connectRooms(r_upstairshall2, "e")
+
+r_upstairshall2.connectRooms(r_storagecloset, "e")
+r_storagecloset.connectRooms(r_upstairshall2, "w")
+
+r_upstairshall2.connectRooms(r_upstairshall3, "n")
+r_upstairshall3.connectRooms(r_upstairshall2, "s")
+
+r_upstairshall3.connectRooms(r_upstairsguestbed3, "w")
+r_upstairsguestbed3.connectRooms(r_upstairshall3, "e")
+
+r_upstairshall3.connectRooms(r_upstairsguestbed4, "e")
+r_upstairsguestbed4.connectRooms(r_upstairshall3, "w")
+
+r_upstairsguestbed4.connectRooms(r_upstairsguestbath, "n")
+r_upstairsguestbath.connectRooms(r_upstairsguestbed4, "s")
+
+r_upstairsguestbed4.connectRooms(r_upstairsguestcloset, "s")
+r_upstairsguestcloset.connectRooms(r_upstairsguestbed4, "n")
+
+r_upstairshall3.connectRooms(r_upstairsguesthall4, "n")
+r_upstairshall4.connectRooms(r_upstairsguesthall3, "s")
+
+r_upstairshall4.connectRooms(r_mastersuite, "n")
+r_mastersuite.connectRooms(r_upstairsguesthall4, "s")
+
+r_mastersuite.connectRooms(r_masterbath, "w")
+r_masterbath.connectRooms(r_mastersuite, "e")
+
+r_mastersuite.connectRooms(r_mastercloset, "e")
+r_mastercloset.connectRooms(r_mastersuite, "w")
 
 
 
