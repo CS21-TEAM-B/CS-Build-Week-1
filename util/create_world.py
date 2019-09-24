@@ -185,6 +185,9 @@ r_cropcircle.connectRooms(r_spaceship, "n")
 r_spaceship.connectRooms(r_spacewestcorridor, "w")
 r_spacewestcorridor.connectRooms(r_spaceship, "e")
 
+r_spacewestcorridor.connectRooms(r_spaceprison, "n")
+r_spaceprison.connectRooms(r_spacewestcorridor, "s")
+
 r_spaceship.connectRooms(r_spacenorthcorridor, "n")
 r_spacenorthcorridor.connectRooms(r_spaceship, "s")
 
@@ -211,10 +214,83 @@ r_controlroom.connectRooms(r_escapepod, "e")
 r_escapepod.connectRooms(r_controlroom, "w")
 
 
-r_controlroom.connectRooms(r_capatainchamber, "w")
-r_capatainchamber.connectRooms(r_controlroom, "e")
+r_controlroom.connectRooms(r_captainchamber, "w")
+r_captainchamber.connectRooms(r_controlroom, "e")
 
 r_escapepod.connectRooms(r_outside, "s")
+
+#linking rooms east of garden to church
+r_gardenpath.connectRooms(r_church, "e")
+r_church.connectRooms(r_gardenpath, "w")
+
+
+r_church.connectRooms(r_sanctuary, "n")
+r_sanctuary.connectRooms(r_church, "s")
+
+
+r_church.connectRooms(r_churchkitchen, "e")
+r_churchkitchen.connectRooms(r_church, "w")
+
+
+r_church.connectRooms(r_churchgreetinghall, "s")
+r_churchgreetinghall.connectRooms(r_church, "n")
+
+
+##linking from the garden path to the main path
+r_gardenpath.connectRooms(r_mainpath, "s")
+r_mainpath.connectRooms(r_gardenpath, "n")
+
+
+#linking main path south towards cottage
+r_mainpath.connectRooms(r_cottage, "s")
+r_cottage.connectRooms(r_mainpath, "n")
+
+
+r_cottage.connectRooms(r_cottagekitchen, "e")
+r_cottagekitchen.connectRooms(r_cottage, "w")
+
+r_cottage.connectRooms(r_scottagecorridor, "s")
+r_scottagecorridor.connectRooms(r_cottage, "n")
+
+r_scottagecorridor.connectRooms(r_upstairscottage, "e")
+r_upstairscottage.connectRooms(r_scottagecorridor, "w")
+
+r_scottagecorridor.connectRooms(r_downstairscottage, "w")
+r_downstairscottage.connectRooms(r_scottagecorridor, "e")
+
+r_scottagecorridor.connectRooms(r_cottageroom, "s")
+r_cottageroom.connectRooms(r_scottagecorridor, "n")
+
+r_cottageroom.connectRooms(r_cottagecloset, "e")
+r_cottagecloset.connectRooms(r_cottageroom, "w")
+
+
+r_cottage.connectRooms(r_cottagedining, "w")
+r_cottagedining.connectRooms(r_cottage, "e")
+
+r_cottagedining.connectRooms(r_downcottagebath, "s")
+r_downcottagebath.connectRooms(r_cottagedining, "n")
+
+r_downstairscottage.connectRooms(r_cottageroom2, "w")
+r_cottageroom2.connectRooms(r_downstairscottage, "e")
+
+r_downstairscottage.connectRooms(r_bombshelter, "s")
+r_bombshelter.connectRooms(r_downstairscottage, "n")
+
+r_upstairscottage.connectRooms(r_upstairscottagehall, "n")
+r_upstairscottagehall.connectRooms(r_upstairscottage, "s")
+
+r_upstairscottagehall.connectRooms(r_upstairscottagebedroom, "w")
+r_upstairscottagebedroom.connectRooms(r_upstairscottagehall, "e")
+
+r_upstairscottagebedroom.connectRooms(r_cottagecloset2, "n")
+r_cottagecloset2.connectRooms(r_upstairscottagebedroom, "s")
+
+r_upstairscottagehall.connectRooms(r_upstairscottagebath, "e")
+r_upstairscottagebath.connectRooms(r_upstairscottagehall, "w")
+
+
+#linking main path east towards private road and mansion
 
 
 
