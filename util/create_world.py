@@ -291,7 +291,76 @@ r_upstairscottagebath.connectRooms(r_upstairscottagehall, "w")
 
 
 #linking main path east towards private road and mansion
+r_mainpath.connectRooms(r_mansionentrance, "e")
+r_mansionentrance.connectRooms(r_mainpath, "w")
 
+r_mansionentrance.connectRooms(r_mansionhall, "e")
+r_mansionhall.connectRooms(r_mansionentrance, "w")
+
+r_mansionhall.connectRooms(r_livingroom, "n")
+r_livingroom.connectRooms(r_mansionhall, "s")
+
+
+r_mansionhall.connectRooms(r_mansionupstairs, "e")
+r_mansionupstairs.connectRooms(r_mansionhall, "w")
+
+
+r_mansionhall.connectRooms(r_mansiondining, "s")
+r_mansiondining.connectRooms(r_mansionhall, "n")
+
+r_mansiondining.connectRooms(r_mansionkitchen, "e")
+r_mansionkitchen.connectRooms(r_mansiondining, "w")
+
+r_mansiondining.connectRooms(r_downstairsmansion, "s")
+r_downstairsmansion.connectRooms(r_mansiondining, "n")
+
+r_downstairsmansion.connectRooms(r_downstairsmansionbed, "w")
+r_downstairsmansionbed.connectRooms(r_downstairsmansion, "e")
+
+r_downstairsmansion.connectRooms(r_downstairsmansionbed2, "e")
+r_downstairsmansionbed2.connectRooms(r_downstairsmansion, "w")
+
+r_downstairsmansion.connectRooms(r_downstairshall, "s")
+r_downstairshall.connectRooms(r_downstairsmansion, "n")
+
+r_downstairshall.connectRooms(r_bowlingalley, "e")
+r_bowlingalley.connectRooms(r_downstairshall, "w")
+
+r_downstairshall.connectRooms(r_movietheater, "w")
+r_movietheater.connectRooms(r_downstairshall, "e")
+
+r_livingroom.connectRooms(r_mansionbath, "w")
+r_mansionbath.connectRooms(r_livingroom, "e")
+
+r_livingroom.connectRooms(r_billiardroom, "e")
+r_billiardroom.connectRooms(r_livingroom, "w")
+
+r_billiardroom.connectRooms(r_northeasthall, "n")
+r_northeasthall.connectRooms(r_billiardroom, "s")
+
+r_northeasthall.connectRooms(r_barpub, "w")
+r_barpub.connectRooms(r_northeasthall, "e")
+
+r_northeasthall.connectRooms(r_arcaderoom, "e")
+r_arcaderoom.connectRooms(r_northeasthall, "w")
+
+r_northeasthall.connectRooms(r_northeasthall2, "n")
+r_northeasthall2.connectRooms(r_northeasthall, "s")
+
+r_northeasthall2.connectRooms(r_trampolineroom, "w")
+r_trampolineroom.connectRooms(r_northeasthall2 "e")
+
+r_northeasthall2.connectRooms(r_indoorpool, "e")
+r_indoorpool.connectRooms(r_northeasthall2, "w")
+
+r_northeasthall2.connectRooms(r_northeasthall3, "n")
+r_northeasthall3.connectRooms(r_northeasthall2, "s")
+
+r_northeasthall3.connectRooms(r_mansionlibrary, "w")
+r_mansionlibrary.connectRooms(r_northeasthall3, "e")
+
+r_northeasthall3.connectRooms(r_securityroom, "e")
+r_securityroom.connectRooms(r_northeasthall3, "w")
 
 
 
