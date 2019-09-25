@@ -77,7 +77,7 @@ You also find a chest with gold inside. Is this the missing treasure from the tr
 you have a chance to grab the treasure, another noise startles you.  This place must be haunted too! Or maybe
 the treasure is protected by a curse! You better not risk it.""")
 
-##garden path and garden
+###garden path and garden
 
 r_chamberroom2= Room(title="Chamber Room Two", description="""You enter and everything starts moving around.
 It appears the room is haunted.  You better leave""")
