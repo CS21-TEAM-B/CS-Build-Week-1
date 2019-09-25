@@ -49,6 +49,40 @@ r_ntunnel= Room(title="North Tunnel", description="""You notice a passage to you
 r_wpassage= Room(title="West Passage", description="""You notice a stairwell to the south, and a chamber entrance 
 continuing west.""")
 
+r_cavernstairs= Room(title="Cavern Stairs", description="""These stairs spiral downward. As you take them cobwebs start to thicken, until you enter a lower cavern. You can either enter 
+the cavern by continuing south, or go back up the stairs""")
+
+r_lowercavern= Room(title="Lower Cavern", description="""You are in a lower cavern. You look around but it is pitch black.
+You better get out of here! **slithering noise heard near feet""")
+
+r_cavernchamber= Room(title="Cavern Chamber", description="""You have entered the cavern chamber. To you notice a chamber hall to the north, west, and south.""")
+
+r_nchamberhall= Room(title="North Chamber Hall", description="""Walking along the north chamber hall you notice a
+door to the east. Shall you enter or go back?""")
+
+r_chamberroom= Room(title="Chamber Room", description="""You enter a chamber room. It is dark. It looks
+lived in. Where did they go? Nothing to find here.  There are no other exits, you must go back.""")
+
+r_wchamberhall= Room(title="West Chamber Hall", description="""You browse the west chamber hall and notice
+a door to the south. You think you heard something inside.""")
+
+r_chamberroom2= Room(title="Chamber Room Two", description="""You enter and everything starts moving around.
+It appears the room is haunted.  You better leave""")
+
+r_schamberhall= Room(title="South Chamber Hall", description="""You stroll down the south chamber hall
+and notice an outline in the cave wall. It's a secret passage! Do you dare enter by continuing south?""")
+
+r_secretchamber= Room(title="Secret Chamber", description="""You've stumbled across a secret chamber! 
+You also find a chest with gold inside. Is this the missing treasure from the treasure room?  Before
+you have a chance to grab the treasure, another noise startles you.  This place must be haunted too! Or maybe
+the treasure is protected by a curse! You better not risk it.""")
+
+##garden path and garden
+
+r_chamberroom2= Room(title="Chamber Room Two", description="""You enter and everything starts moving around.
+It appears the room is haunted.  You better leave""")
+
+
 r_outside.save()
 r_foyer.save()
 r_overlook.save()
@@ -65,10 +99,95 @@ r_stunnel5.save()
 r_stunnel6.save()
 r_ntunnel.save()
 r_wpassage.save()
-
-#add these above
+##
 r_lowercavern.save()
 r_cavernstairs.save()
+r_cavernchamber.save()
+r_nchamberhall.save()
+r_wchamberhall.save()
+r_schamberhall.save()
+r_secretchamber.save()
+r_chamberroom.save()
+r_chamberroom2.save()
+r_gardenpath.save()
+r_garden.save()
+r_pumpkinpatch.save()
+r_tomatopatch.save()
+r_cornfield.save()
+r_cornpath.save()
+r_cropcircle.save()
+r_cropsquare.save()
+r_croptriangle.save()
+r_spaceship.save()
+r_spacewestcorridor.save()
+r_spaceprison.save()
+r_spacenorthcorridor.save()
+r_cockpit.save()
+r_spaceeastcorridor.save()
+r_spacedining.save()
+r_spacelibrary.save()
+r_controlroom.save()
+r_captainchamber.save()
+r_escapepod.save()
+r_church.save()
+r_sanctuary.save()
+r_churchkitchen.save()
+r_churchgreetinghall.save()
+r_mainpath.save()
+r_cottage.save()
+r_cottagekitchen.save()
+r_scottagecorridor.save()
+r_upstairscottage.save()
+r_downstairscottage.save()
+r_cottageroom.save()
+r_cottagecloset.save()
+r_cottagedining.save()
+r_cottagebath.save()
+r_cottageroom2.save()
+r_bombshelter.save()
+r_upstairscottage.save()
+r_cottagecloset2.save()
+r_upstairscottagehall.save()
+r_upstairscottagebedroom.save()
+r_mansionentrance.save()
+r_mansionhall.save()
+r_mansionlivingroom.save()
+r_mansiondining.save()
+r_mansionkitchen.save()
+r_downstairsmansion.save()
+r_downstairsmansionbed.save()
+r_downstairsmansionbed2.save()
+r_downstairshall.save()
+r_bowlingalley.save()
+r_movietheater.save()
+r_mansionbath.save()
+r_billiardroom.save()
+r_northeasthall.save()
+r_barpub.save()
+r_arcaderoom.save()
+r_northeasthall2.save()
+r_trampolineroom.save()
+r_northeasthall3.save()
+r_indoorpool.save()
+r_mansionlibrary.save()
+r_securityroom.save()
+r_mansionupstairs.save()
+r_upstairshall.save()
+r_upstairshall2.save()
+r_upstairshall3.save()
+r_upstairsguestbed.save()
+r_upstairsguestbed2.save()
+r_upstairsguestbath2.save()
+r_upstairsguestcloset2.save()
+r_sauna.save()
+r_storagecloset.save()
+r_upstairsguestbed3.save()
+r_upstairsguestbed4.save()
+r_upstairsguestbath.save()
+r_upstairsguestcloset.save()
+r_mastersuite.save()
+r_masterbath.save()
+r_mastercloset.save()
 
 
 
