@@ -260,9 +260,76 @@ r_securityroom= Room(title="Security Room", description="""Surprisingly the secu
 minitors surrounding the perimeter of the mansion.  The live footage seems to be all you have access to.  Evetything else seems to be 
 encrypted or password protected.""")
 
+r_mansiondining= Room(title="Dining Hall", description="""A beautiful dining hall with a long table for entertaining lots
+of guests. To the east is the kitchen, and another part of the house is to the south.  It appears to be a stairway going downstairs.""")
+
+r_mansionkitchen= Room(title="Mansion Kitchen", description="""Huge commercial size kitchen!  You've never been much of a cook so this
+doesn't excite you.""")
+
+r_mansionkitchen= Room(title="Mansion Kitchen", description="""Huge commercial size kitchen!  You've never been much of a cook so this
+doesn't excite you.""")
+
+r_downstairsmansion= Room(title="Downstairs Mansion", description="""Downstairs you see a door to your the east and west, as well as the 
+hall continuing south.""")
+
+r_downstairsmansionbed= Room(title="Guest Room", description="""A guest bedroom. It has a bed and it's own fireplace. Nice.""")
+
+r_downstairsmansionbed2= Room(title="Guest Room Two", description="""A guest bedroom. It has a mini fridge with sodas and shots.""")
+
+r_downstairshall= Room(title="Downstairs Hall", description="""To the east you see a broad entrance with the words 'Bowling Alley' in neon lights
+hanging above it! To the west you see the same thing, only the lights say 'Movie Theater""")
+
+r_bowlingalley= Room(title="Bowling Alley", description="""A nice 5 line bowling alley!  You grab a ball and roll the ball down the alley....Strike!""")
+
+r_movietheater= Room(title="Movie Theater", description="""As you enter the theater you take a seat in one of the many reclined seats.  'How do I start a movie?', you ask yourself....Suddenly the screen turns
+on and a voice comes through the speakers.... 'Good evening sir, did I hear you wanted to start a movie?'.  Voice activated movie theater! Wow!
+You don't have time to sit and watch a flick, you say 'No thank you'... the screen shuts off. You better get moving.""")
+
+r_mansionupstairs= Room(title="Upstairs", description="""You've arrived upstairs.  Shall you continue north
+to see more of the mansion, or go back downstairs?""")
 
 
+r_upstairshall= Room(title="Upstairs Hall", description="""The hall continues north with rooms on both sides. Shall you inspect the rooms
+to the east or west?""")
 
+r_upstairsguestbed= Room(title="Upstairs Guest Bed", description="""Beautiful guest room... but you're starting to get sick of guest rooms. You've seen one
+you've seen them all.""")
+
+r_upstairsguestbed2= Room(title="Upstairs Guest Bed Two", description="""Another guest room... there is a door to the north and south""")
+
+r_upstairsguestbath2= Room(title="Upstairs Guest Bath Two", description="""Beautiful guest bath, layed with gold. Lexington goes all out, even for guests.""")
+
+r_upstairsguestcloset2= Room(title="Upstairs Guest Closet Two", description="""Nice, spacious walk in closet. Empty though.""")
+
+r_upstairsguestbed= Room(title="Upstairs Guest Bed", description="""Beautiful guest room... but you're starting to get sick of guest rooms. You've seen one
+you've seen them all.""")
+
+r_upstairsguesthall2= Room(title="Upstairs Hall Two", description="""Continue north or inspect the rooms on either side?""")
+
+r_storagecloset= Room(title="Storage Closet", description="""Storage closet. Seems to be packed with canned food, survival items, blankets, towels,
+pretty much everything.""")
+
+r_sauna= Room(title="Sauna", description="""Ooo... a sauna! Better not though.""")
+
+r_upstairshall3= Room(title="Upstairs Hall Three", description="""Continue north or inspect rooms?""")
+
+r_upstairsguestbed4= Room(title="Upstairs Guest Room Four", description="""Nice and cozy guest room. There are doors to the north and south. 
+Probably a closet and a bath.""")
+
+r_upstairsguestbath= Room(title="Upstairs Guest Bath Four", description="""Beautiful guest bath layed in gold""")
+
+r_upstairsguestcloset= Room(title="Upstairs Guest Closet Four", description="""Big walk in closet. Nice.""")
+
+r_upstairshall4= Room(title="Upstairs Hall Four", description="""You have reached the end of the hall. There are no doors to the east or west.
+There is, however, a door in front of you facing north.""")
+
+r_mastersuite= Room(title="Master Suite", description="""The master suite! This entire room is bigger than your own house!
+There is a mini bar in the corner, a fireplace on the opposite side, and a double king sized bed. The master bath is to the west, with a 
+walk in closet to the east.""")
+
+r_masterbath= Room(title="Master Bath", description="""Biggest bathroom in the mansion.  Words cannot describe what you see. Gold and diamonds everywhere.""")
+
+r_mastercloset= Room(title="Master Closet", description="""Who needs a closet this big? This room is big enough to live in.""")
 
 r_outside.save()
 r_foyer.save()
