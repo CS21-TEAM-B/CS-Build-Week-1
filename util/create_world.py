@@ -5,7 +5,7 @@ from adventure.models import Player, Room
 Room.objects.all().delete()
 #rooms outside cave
 r_outside = Room(title="Outside Cave Entrance",
-               description="North of you, the cave mount beckons. To the south you see a nice garden path")
+               description=" You are outside.  North of you, the cave mount beckons. To the south you see a nice garden path")
 
 r_foyer = Room(title="Foyer", description="""Dim light filters in from the south. Dusty
 passages run north and east.""")
@@ -79,8 +79,131 @@ the treasure is protected by a curse! You better not risk it.""")
 
 ###garden path and garden
 
-r_chamberroom2= Room(title="Chamber Room Two", description="""You enter and everything starts moving around.
-It appears the room is haunted.  You better leave""")
+r_gardenpath= Room(title="Garden Path", description="""Walking along the garden path you notice a garden to the west and a church
+to the east.  You can also go north back to the cave.  While looking south you see the garden path merges with
+the main path""")
+
+r_garden= Room(title="Garden", description="""You have entered the garden, but where is the gardener? To the north you see a pumpkin patch,
+to the south you see a tomato patch, and you hear something coming from the cornfield to the west""")
+
+r_pumpkinpatch= Room(title="Pumpkin Patch", description="""You stroll the pumpkin patch. You notice a 8 foot
+pumpking with a ribbon on it. It must have won at the county fair. There are no other paths.""")
+
+r_tomatopatch= Room(title="Tomato Patch", description="""You walk along the tomato patch and pick a few
+to eat. They are delicious!  Nothing else to see here, no other paths""")
+
+r_cornfield= Room(title="Cornfield", description="""You enter the cornfield. The stalks surround you and make you
+feel small. That noise you heard gets louder and sounds like it's coming from the north. Do you investigate or go back?""")
+
+r_cornpath= Room(title="Corn Path", description="""It appears as if some corn stalks have fallen over and
+have made a makeshift path. Do you want to continue north? The sound is getting louder""")
+
+r_cropcircle= Room(title="Crop Circle", description="""You suddenly are no longer surrounded by corn stalks. 
+You are not standing in a massive crop circle. What could have caused this? That noise you heard seems to be coming from
+the north.  You also see a bright light coming from that direction. Do you dare move forward? You also notice other crop 
+signs to your east and west. If you are scared, you may flee south from where you came.""")
+
+r_cropsquare= Room(title="Crop Square", description="""You have entered a crop square. Perfectly square and symetrical. What is
+causing this? There are no other ways out.""")
+
+r_croptriangle= Room(title="Crop Triange", description="""A perfect triangle formed out of corn.  Is this aliens? The
+illuminati? There are no other exits.""")
+
+r_spaceship= Room(title="Spaceship", description="""As you move towards the light, you all of a sudden feel yourself being levitated up
+towards the sky! It was a UFO. You're being beamed up! Oh no!  The ship is oddly quiet. Where is everyone? 
+Now that you are in the ship, you must find a way out!
+You notice corridors to your north, west, and east.""")
+
+r_spacewestcorridor= Room(title="West Corridor", description="""Entering the west corridor you notice a door to the north""")
+
+r_spaceprison= Room(title="Prison Entrance", description="""You see what appears to be a holding cell for humans, but you can't see inside.
+You hear people yelling for help.  You can't open the door, and you don't want to be one of them. You must find a way out!""")
+
+r_spaceeastcorridor= Room(title="East Corridor", description="""You walk along the east corridor and see a hall going north, and another room south""")
+
+r_spacedining= Room(title="Dining Room", description="""It appears to be the dining room for aliens.  You
+see a menu on the wall with pictures of humans.... oh no, they eat us! You must leave!""")
+
+r_controlroom= Room(title="Control Room", description="""You're now in the control room! What a sight!  But no time
+to gaze, you need to find a way out.  You notice a door to you north, west, and east.""")
+
+r_captainchamber= Room(title="Capatain's Chamber", description="""You seemed to have entered the captain's chamber,
+but he is nowhere to be found.  No other exits""")
+
+r_spacelibrary= Room(title="Library", description="""You've entered what appears to be a library. You browse
+the books and it seems they've been studying us for a long time.  You think you hear a noise, better leave!""")
+
+r_escapepod= Room(title="Escape Pod", description="""You enter a tiny box.  You can't read the language on the wall,
+but the diagrams show that what you're in seems to be an escape pod! You can launch the pod by going south.""")
+
+r_church= Room(title="Church", description="""You arrive at the church, but it appears to be empty... Strange, given
+that it's a Sunday. Maybe check the sanctuary to the north? There is also a kitchen to the east, and the church greeting hall to the
+south""")
+
+
+r_sanctuary= Room(title="Sanctuary", description="""The Sanctuary is empty as well.  Where is the Pastor, all the congregants?
+Better go back.""")
+
+
+r_churchkitchen= Room(title="Church Kitchen", description="""Clean as a whistle. The church staff really takes
+'cleanliness is next to Godliness' seriously.  Not a speck of dust to be seen.... nor a single person.  Better go back and check somewhere else""")
+
+r_mainpath= Room(title="Main Path", description="""The garden path has ended and you are now on the main path! To the eat you see 
+a private road that leads the mansion of Mark Lexington III.  Perhaps he invited all the townspeople over for a gathering?
+But then again, why didn't you get an invite?  The south leads to the Old Man Jenkin's Cottage.  """)
+
+
+r_cottage= Room(title="Cottage", description="""You arrive at Old Man Jenkin's cottage. It's silent as well. The door is unlocked..
+(strange, as Jenkins has always been the paranoid type), you enter.  To the east is the kitchen, and to the west is the dining room.
+To the south you see a narrow hall.""")
+
+r_cottagekitchen= Room(title="Cottage Kitchen", description="""Nothing too exciting here.  You see tin foil plastered all over
+the kitchen, with sketches of UFOs... Jenkins really is paranoid. You always knew he was, but thought it was more about government
+conspiracy than aliens.  Nothing else to see in here.""")
+
+r_scottagecorridor= Room(title="Cottage Corridor", description="""The narrow hall seems to lead to another part of the cottage.
+The east leads upstairs, and west leads downstairs, and in front of you to the south is a door.""")
+
+r_cottageroom= Room(title="Cottage Room", description="""A nice homey cottage room.  Seems strange
+compared to the rest of the cottage. To the east is a door. The closet perhaps?""")
+
+r_cottagecloset= Room(title="Cottage Closet", description="""Yep. Just a small closet. Nothing in here.""")
+
+r_downstairscottage= Room(title="Basement", description="""Downstairs is small, but there does appear to be
+other rooms, to the west and south there are doors.""")
+
+r_cottageroom2= Room(title="Spare Room", description="""Appears to be guest room. There is a bed in the corner. No windows though. No other
+exits""")
+
+
+r_bombshelter= Room(title="Bomb Shelter", description="""You enter what appears to be the first portion of a
+bomb shelter.  Jenkins isn't messing around, he really is paranoid.  The actual bomb shelter is in front of you, but it is locked.
+You peek through the small eye hole on the door and see steps going down. Maybe Jenkins went down there? Better not
+investigate... even if you did get in, he'd probably shoot you for trespassing... Come to think of it, you better leave.""")
+
+
+r_cottagedining= Room(title="Cottage Dining", description="""Nice cozy dining room. To the south you see a door.""")
+
+r_cottagebath= Room(title="Bathroom", description="""Small bathroom.  It does have a nice clawfoot bathtub... don't see those around
+too often anymore.""")
+
+r_upstairscottage= Room(title="Upstairs Cottage", description="""You have arrived upstairs. The upstairs continues north.""")
+
+r_upstairscottagehall= Room(title="Upstairs Hall", description="""In the hallway you see a door to the east and west.""")
+
+r_upstairscottagebedroom= Room(title="Cottage Master Room", description="""Nice cottage room. Must be the mater room. There is a buck and an elk
+hanging on the well, with a nice fireplace in the corner. A door is to the north.""")
+
+
+r_cottagecloset2= Room(title="Master Closet", description="""Closet is completely empty.  You also see a gun
+case that has been emptied.  It seems Jenkins took all his belongings and guns and fled. Where did he go?""")
+
+
+
+
+
+
+
 
 
 r_outside.save()
@@ -148,6 +271,7 @@ r_bombshelter.save()
 r_upstairscottage.save()
 r_cottagecloset2.save()
 r_upstairscottagehall.save()
+r_upstairscottagebath.save()
 r_upstairscottagebedroom.save()
 r_mansionentrance.save()
 r_mansionhall.save()
