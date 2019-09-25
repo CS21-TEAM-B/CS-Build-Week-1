@@ -198,9 +198,67 @@ hanging on the well, with a nice fireplace in the corner. A door is to the north
 r_cottagecloset2= Room(title="Master Closet", description="""Closet is completely empty.  You also see a gun
 case that has been emptied.  It seems Jenkins took all his belongings and guns and fled. Where did he go?""")
 
+r_upstairscottagebath= Room(title="Upstairs Bath", description="""Nice bathroom for a cottage.  You see a clawfoot bathtub
+and a shower in the corner.  You also see a homemade eyewash station.  """)
+
+
+r_mansionentrance= Room(title="Mansion Entrance", description="""The private road has led you to the Lexington's mansion. You are standing
+at the entrance.  You thought maybe all the townspeople were invited here, but it is still quiet... shall you enter?  You may enter by going
+east.""")
+
+
+r_mansionhall= Room(title="Mansion Hall", description="""You are standing in the main mansion hall.  What a sight!
+There is a beautiful chandelier made of gold, diamond and crystal hanging above your head. To the east is a large
+staircase heading upstairs made of pure oak.  To the south is the dining hall, and to the north is the entertainment hall.""")
+
+
+r_livingroom= Room(title="Entertainment Hall", description="""Seems to be the living room (or the 'entertainment hall') as Lexington
+likes to call it.  To the west is a door, and the east leads towards the billiard room.""")
+
+r_mansionbath= Room(title="Mansion Bath", description="""What a beautiful bathroom. You've never seen anything
+like it. It's just a bathroom though, why all the grandour? You see a toilet made of pure gold, a shower lined in gold,
+as well as the sink.  The tiles on the floor are heated. What a sight!""")
+
+r_billiardroom= Room(title="Billiard Room", description="""Nice cozy billiard room.  The walls are a dark oak wtih a fireplace in the corner.
+Shall you rack up and play a few rounds?  You notice a door to the north that leads to another part of the mansion.""")
+
+
+r_northeasthall= Room(title="Northeast Hall", description="""You've entered the northeast part of the house. What's over here anyway?
+You see doors on both sides of the hall heading north.  Shall you continue north down the hall towards the other rooms
+or inspect the rooms beside you?  The doors are to your east and west.""")
+
+r_barpub= Room(title="Bar/Pub", description="""Lexington has his own bar. Of course he does.  You browse and find your
+favorite liquor.  Shall you make yourself a drink?  You don't mind if you do.  You mix yourself a Tom Collins... better get to inspecting 
+the rest of the mansion.""")
+
+
+r_arcaderoom= Room(title="Arcade Room", description="""Lexington has an arcade room? He never struck you
+as the type to play video games.  Maybe they are for his guests... but then again the town doesn't have many children. 
+Maybe they are for his nephews?  Does Lexington have nephews?""")
+
+r_northeasthall2= Room(title="Northeast Hall Two", description="""The second second section of the hall... do you continue or inspect the rooms
+to west and east?""")
+
+r_trampolineroom= Room(title="Trampoline Room", description="""Wow! You've always heard about these but never
+thought they actually existed!  A room made entirely out of trampoline.  You take off your shoes and bounce
+around for a while.... whew! You are exhausted... you forgot what you were doing for a moment... better get back
+to investigating.""")
 
 
 
+r_indoorpool= Room(title="Indoor Pool", description="""Of coure he has a pool, why wouldn't he!  You see a beautiful
+waterfall that pours into the pool, as well as a HUGE waterslide!  Ah man, if only you brought your swimming clothes!""")
+
+r_northeasthall3= Room(title="Northeast Hall Three", description="""You've reached the end of the hall. You can go back or inspect the rooms
+to the east or west.""")
+
+r_mansionlibrary= Room(title="Mansion Library", description="""The biggest library you've ever seen! How does anyone collect this
+many books! What's the point? Books are meant to be read and it's impossible to read all of these!  It reminds you of that library scene
+out of Beauty and the Beast.... so many books!""")
+
+r_securityroom= Room(title="Security Room", description="""Surprisingly the security room is unlocked. You see multiple
+minitors surrounding the perimeter of the mansion.  The live footage seems to be all you have access to.  Evetything else seems to be 
+encrypted or password protected.""")
 
 
 
@@ -275,7 +333,7 @@ r_upstairscottagebath.save()
 r_upstairscottagebedroom.save()
 r_mansionentrance.save()
 r_mansionhall.save()
-r_mansionlivingroom.save()
+r_livingroom.save()
 r_mansiondining.save()
 r_mansionkitchen.save()
 r_downstairsmansion.save()
