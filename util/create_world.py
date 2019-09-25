@@ -71,6 +71,7 @@ r_lowercavern.save()
 r_cavernstairs.save()
 
 
+
 # Link rooms together in cavern/cave
 r_outside.connectRooms(r_foyer, "n")
 r_foyer.connectRooms(r_outside, "s")
