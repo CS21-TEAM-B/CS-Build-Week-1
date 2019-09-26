@@ -763,7 +763,7 @@ r_cockpit.connectRooms(r_spacenorthcorridor, 's')
 r_spaceship.connectRooms(r_spaceeastcorridor, 'e')
 r_spaceeastcorridor.connectRooms(r_spaceship, 'w')
 
-r_spaceship.connectRooms(r_controlroom, 'n')
+r_spaceeastcorridor.connectRooms(r_controlroom, 'n')
 r_controlroom.connectRooms(r_spaceeastcorridor, 's')
 
 r_spaceeastcorridor.connectRooms(r_spacedining, 's')
