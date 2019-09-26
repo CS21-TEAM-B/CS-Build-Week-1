@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'adventure.apps.AdventureConfig',
     'api',
     'corsheaders',
+    'dotenv',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
