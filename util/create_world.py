@@ -965,8 +965,9 @@ r_upstairsguestbath.connectRooms(r_upstairsguestbed4, 's')
 r_upstairsguestbed4.connectRooms(r_upstairsguestcloset, 's')
 r_upstairsguestcloset.connectRooms(r_upstairsguestbed4, 'n')
 
-r_upstairshall3.connectRooms(r_upstairshall4, 'n')
+
 r_upstairshall4.connectRooms(r_upstairshall3, 's')
+r_upstairshall3.connectRooms(r_upstairshall4, 'n')
 
 r_upstairshall4.connectRooms(r_mastersuite, 'n')
 r_mastersuite.connectRooms(r_upstairshall4, 's')
