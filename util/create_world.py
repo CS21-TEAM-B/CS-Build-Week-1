@@ -3,7 +3,9 @@
 from django.contrib.auth.models import User
 from adventure.models import Player, Room
 
+
 Room.objects.all().delete()
+
 
 # rooms outside cave
 
@@ -976,6 +978,7 @@ r_mastersuite.connectRooms(r_mastercloset, 'e')
 r_mastercloset.connectRooms(r_mastersuite, 'w')
 
 players = Player.objects.all()
+
 for p in players:
     p.currentRoom = r_outside.id
     p.save()
