@@ -73,11 +73,6 @@ r_stunnel6 = Room(title='South Tunnel 6',
                   description="""It was just the rocks settling in the cave. Another dead end. You better go back"""
                   )
 
-r_etunnel = Room(title='East Tunnel 3',
-                 description="""You have gone as far as you can go in the east tunnel. You notice
-a tunnel goes north. You can go this way or go back """
-                 )
-
 r_ntunnel = Room(title='North Tunnel',
                  description="""You notice a passage to your west.""")
 
