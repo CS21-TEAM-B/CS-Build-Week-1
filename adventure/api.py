@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 # from pusher import Pusher
+from rest_framework import serializers, viewsets
+from .models import Room
 from django.http import JsonResponse
 from decouple import config
 from django.contrib.auth.models import User
@@ -10,6 +12,16 @@ import json
 
 # instantiate pusher
 # pusher = Pusher(app_id=config('PUSHER_APP_ID'), key=config('PUSHER_KEY'), secret=config('PUSHER_SECRET'), cluster=config('PUSHER_CLUSTER'))
+
+class RoomSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Room
+        fields = ("title", "description")
+
+class RoomViewSet(viewsets.ModelViewSet):
+    serializer_class = RoomSerializer
+    queryset = Room.objects.all()
+
 
 @csrf_exempt
 @api_view(["GET"])
@@ -65,3 +77,4 @@ def move(request):
 def say(request):
     # IMPLEMENT
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
+

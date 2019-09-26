@@ -8,12 +8,13 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import dj_database_url
+import dotenv
 import django_heroku
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
 import os
 from decouple import config
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# This line should already exist in your settings.py
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dotenv_file = os.path.join(BASE_DIR, ".env")
 if os.path.isfile(dotenv_file):
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'api',
     'dotenv',
     'corsheaders',
+    'dotenv',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
