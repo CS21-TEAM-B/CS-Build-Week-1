@@ -24,12 +24,7 @@ class RoomViewSet(viewsets.ModelViewSet):
     serializer_class = RoomSerializer
     queryset = Room.objects.all()
 
-@api_view(['GET'])
-def swanger(request):
-  resutl = {'a': 1}
-  resp = JsonResponse(resutl)
-  resp['Access-Control-Allow-Origin'] = '*'
-  return resp  
+
 # @csrf_exempt
 # @api_view(["GET"])
 # def rooms(request):
