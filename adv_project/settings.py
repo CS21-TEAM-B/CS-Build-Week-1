@@ -32,9 +32,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 
-
+CORS_ORIGIN_WHITELIST = ("https://google.com",
+                         "https://hostname.example.com",
+                         "http://localhost:8000",
+                         "http://127.0.0.1:9000"
+                         )
 # Application definition
-CORS_ORIGIN_ALLOW_ALL=True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -70,7 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'adv_project.urls'
