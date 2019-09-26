@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adventure.apps.AdventureConfig',
     'api',
-    'dotenv',
     'corsheaders',
     'dotenv',
     'rest_framework',
