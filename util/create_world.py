@@ -714,7 +714,7 @@ r_chamberroom2.connectRooms(r_schamberhall, 'n')
 # linking rooms in the garden and garden path
 
 r_outside.connectRooms(r_gardenpath, 's')
-r_gardenpath.connectRooms(r_overlook, 'n')
+r_gardenpath.connectRooms(r_outside, 'n')
 
 r_gardenpath.connectRooms(r_garden, 'w')
 r_garden.connectRooms(r_gardenpath, 'e')
