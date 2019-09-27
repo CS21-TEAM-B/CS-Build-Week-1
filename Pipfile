@@ -18,7 +18,6 @@ psycopg2-binary = "*"
 dj-database-url = "*"
 whitenoise = "*"
 python-dotenv = "*"
-django-accept-header = "*"
 
 [dev-packages]
 pylint = "<2.0.0"
